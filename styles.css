@@ -1,0 +1,138 @@
+body {
+  background-color: #3C3C3C;
+  font-family: monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+#calculator {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #282828;
+  border: solid 1px #282828;
+  border-radius: 12px;
+  padding: 20px;
+}
+  
+/* DISPLAY */
+#display {
+  width: 80%;
+  height: 40px;
+  color: #DFDFDF; 
+  background-color: #282828;
+  padding: 10px;
+  margin: 8px;
+  text-align: right;
+  font-size: 40px;
+}
+
+/* KEYBOARD */
+#keyboard {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: stretch;
+  padding: 10px; /* test */
+  gap: 8px; /* test */
+}
+
+/* KEYS BUTTONS */
+#keys {
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* test */
+}
+.key {
+  font-family: monospace;
+  background-color: #3C3C3C;
+  border: solid 1px #3C3C3C;
+  border-radius: 5px;
+  color: #DFDFDF;
+  font-size: 25px;
+  padding: 10px 25px; 
+  transition: background-color 0.1s ease, transform 0.1s ease;
+}
+.key:hover {
+  background-color: #333333;
+}
+.key:active {
+  transform: scale(0.95); 
+}
+#fourthRow {
+  display: flex;
+  gap: 8px;
+}
+#zero {
+  flex: 2
+}
+
+/* OPERATORS BUTTONS */
+#operators {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.operator {
+  font-family: monospace;
+  background-color: #333333;
+  border: solid 1px #333333;
+  border-radius: 5px;
+  color: #DFDFDF;
+  font-size: 25px;
+  padding: 10px 25px; 
+  transition: background-color 0.1s ease, transform 0.1s ease;
+}
+.operator:hover {
+  background-color: #3C3C3C;
+}
+.operator:active {
+  transform: scale(0.95); 
+}
+  
+/* EQUALS BUTTON */
+.equals {
+  font-family: monospace;
+  background-color: #FFFF00;
+  border: solid 1px #FFFF00;
+  border-radius: 5px;
+  color: #282828;
+  font-size: 25px;
+  padding: 10px 25px;
+  transition: filter 0.1s ease, transform 0.1s ease;
+}
+.equals:hover {
+  filter: brightness(75%);
+}
+.equals:active {
+  transform: scale(0.95); 
+}
+ 
+/* CLEAR BUTTONS */
+#clears {
+  display: flex;
+  gap: 8px; /* test */
+}
+.clear {
+  font-family: monospace;
+  background-color: #333333;
+  border: solid 1px #333333;
+  border-radius: 5px;
+  color: #DFDFDF;
+  font-size: 25px;
+  padding: 10px 25px; 
+  transition: background-color 0.1s ease, transform 0.1s ease;
+}
+.clear:hover {
+  background-color: #3C3C3C;
+}
+.clear:active {
+  transform: scale(0.95); 
+}
+#allClear {
+  flex: 2;
+}
